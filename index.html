@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>KT2</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <pre>Pop Punk Paradise      Главная      О нас      Корзина: <span id="c">0</span>    <button id="d">Сменить тему</button></pre>
+                <style>
+                    .dark{
+                    background: #222;
+                    color: aliceblue;
+                    }
+                </style>
+                    
+                    <script>
+                d.onclick=()=>document.body.classList.toggle('dark')
+            </script>
+        </nav>
+    </header>
+
+<div class="main">
+    <h1>Pop Punk Paradise</h1>
+        <h3>Ваш портал в стиль Y2K</h3>
+    <button onclick="document.location='https://www.figma.com/design/lJx50JtU88uoQVltURod52/WEB-DES-3year?node-id=9-65'">Подробнее</button>  
+</div>
+
+<div class="about">
+    <h4>Погрузитесь в эпоху Y2K с Pop Punk Paradise</h4>
+        <p>Мы – не просто магазин одежды, мы – хранители стиля переходного тысячелетия. Наша страсть к Y2K – это больше, чем тенденция, это образ мышления. Мы верим, что мода – это способ самовыражения, 
+            и поэтому мы ищем для вас самые уникальные и аутентичные вещи, которые позволят вам заявить о себе. Откройте для себя нашу коллекцию и найдите те сокровища, 
+            которые сделают ваш стиль незабываемым, полным энергии и духа Y2K.</p>
+</div>
+
+<div class="flex-container">
+<div class="flex-card"><p>T-SHIRT Y2K</p>
+    <img src="https://i.pinimg.com/1200x/d7/33/f2/d733f2ebe14a2bd5827589a64d1b2d38.jpg" alt="" width="150px" height="200px">
+    <button id="btn1">Купить +1</button>
+<button id="zero1">Удалить</button>
+
+
+<script>
+    btn1.onclick=()=>c.innerHTML++
+    zero1.onclick=()=>c.innerHTML=0
+
+</script>
+</div>
+<div class="flex-card"><p>JEANS Y2K</p>
+    <img src="https://i.pinimg.com/736x/df/06/40/df0640024f3bd60084fb645fd3dd019d.jpg" alt="" width="150px" height="200px">
+    <button id="btn2">Купить +1</button>
+<button id="zero2">Удалить</button>
+
+
+<script>
+    btn2.onclick=()=>c.innerHTML++
+    zero2.onclick=()=>c.innerHTML=0
+
+</script>
+</div>
+<div class="flex-card"><p>SHOES Y2K</p>
+    <img src="https://i.pinimg.com/1200x/c4/66/5a/c4665a59e90d3eccdc746b237a7fb2ab.jpg" alt="" width="150px" height="200px">
+    <button id="btn3">Купить +1</button>
+<button id="zero3">Удалить</button>
+
+
+<script>
+    btn3.onclick=()=>c.innerHTML++
+    zero3.onclick=()=>c.innerHTML=0
+
+</script>
+</div>
+<div class="flex-card"><p>BAG Y2K</p>
+    <img src="https://i.pinimg.com/736x/ea/cc/1c/eacc1c3aded79deb0fc8e5a49261f9c2.jpg" alt="" width="150px" height="200px">
+    <button id="btn4">Купить +1</button>
+<button id="zero4">Удалить</button>
+
+
+<script>
+    btn4.onclick=()=>c.innerHTML++
+    zero4.onclick=()=>c.innerHTML=0
+
+</script>
+</div>
+</div>
+
+<h4>Список для заметок, что хотите преобрести, чтобы не потерять (´｡• ω •｡`) </h4>
+<input id="text">
+<button id="b">+</button>
+<ul id="ul"></ul>
+
+<script>
+b.onclick=()=>{
+    ul.innerHTML+='<li>'+ text.value+ '</li>';
+    text.value=''
+}
+
+</script>
+
+<style>
+    .dark{
+        background: #222;
+        color: aliceblue;
+    }
+</style>
+
+<h4> Есть ли доставка в мой город/страну? </h4>
+<button id="btn5">Ответ на Ваш вопрос</button>
+<p id="p5"></p>
+
+<script>
+    btn5.onclick=()=>p5.innerHTML = 'Да, доставка осуществляется по всему миру.'
+</script>
+
+<h4> Какой у вас размерный ряд? Соответствуют ли размеры международным стандартам? </h4>
+<button id="btn6">Ответ на Ваш вопрос</button>
+<p id="p6"></p>
+
+<script>
+    btn6.onclick=()=>p6.innerHTML = 'Наши размеры указаны в таблице размеров на каждой странице товара.'
+</script>
+
+<h4> Каковы условия возврата и обмена товара? </h4>
+<button id="btn7">Ответ на Ваш вопрос</button>
+<p id="p7"></p>
+
+<script>
+    btn7.onclick=()=>p7.innerHTML = 'Возврат в течение 14 дней, возможен обмен.'
+</script>
+
+<h4> Как быстро отправляется заказ после оплаты? </h4>
+<button id="btn8">Ответ на Ваш вопрос</button>
+<p id="p8"></p>
+
+<script>
+    btn8.onclick=()=>p8.innerHTML = 'Заказ отправляется в течение 1-3 рабочих дней.'
+</script>
+
+<h4> Есть ли возможность ускоренной доставки? </h4>
+<button id="btn9">Ответ на Ваш вопрос</button>
+<p id="p9"></p>
+
+<script>
+    btn9.onclick=()=>p9.innerHTML = 'Да, доступна экспресс-доставка за дополнительную плату.'
+</script>
+
+ <footer>
+    <pre>Pop Punk Paradise      Главная      О нас</pre>
+</footer>
+
+</body>
+</html>
+
