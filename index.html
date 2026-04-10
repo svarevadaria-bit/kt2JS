@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="ccs3.css"/>
         <title>KT2</title>
     </head>
 <body>
@@ -105,44 +105,22 @@ b.onclick=()=>{
     }
 </style>
 
-<h4> Есть ли доставка в мой город/страну? </h4>
-<button id="btn5">Ответ на Ваш вопрос</button>
-<p id="p5"></p>
+<form id="myForm">
+  <input type="text" name="username" placeholder="Ваше имя">
+  <input type="password" name="password" placeholder="Пароль">
+  <button id="submitButton" type="submit">Войти</button>
+</form>
 
 <script>
-    btn5.onclick=()=>p5.innerHTML = 'Да, доставка осуществляется по всему миру.'
-</script>
+  const form = document.getElementById('myForm');
 
-<h4> Какой у вас размерный ряд? Соответствуют ли размеры международным стандартам? </h4>
-<button id="btn6">Ответ на Ваш вопрос</button>
-<p id="p6"></p>
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
-<script>
-    btn6.onclick=()=>p6.innerHTML = 'Наши размеры указаны в таблице размеров на каждой странице товара.'
-</script>
-
-<h4> Каковы условия возврата и обмена товара? </h4>
-<button id="btn7">Ответ на Ваш вопрос</button>
-<p id="p7"></p>
-
-<script>
-    btn7.onclick=()=>p7.innerHTML = 'Возврат в течение 14 дней, возможен обмен.'
-</script>
-
-<h4> Как быстро отправляется заказ после оплаты? </h4>
-<button id="btn8">Ответ на Ваш вопрос</button>
-<p id="p8"></p>
-
-<script>
-    btn8.onclick=()=>p8.innerHTML = 'Заказ отправляется в течение 1-3 рабочих дней.'
-</script>
-
-<h4> Есть ли возможность ускоренной доставки? </h4>
-<button id="btn9">Ответ на Ваш вопрос</button>
-<p id="p9"></p>
-
-<script>
-    btn9.onclick=()=>p9.innerHTML = 'Да, доступна экспресс-доставка за дополнительную плату.'
+    const formData = new FormData(form);
+    console.log('Username:', formData.get('username'));
+    console.log('Password:', formData.get('password'));
+  });
 </script>
 
  <footer>
