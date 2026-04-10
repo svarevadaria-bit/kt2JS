@@ -467,3 +467,26 @@ pre{
     transform: scale(1);
     padding: 5px;
 }
+
+#submitButton{
+    background: transparent;
+    transition: all 0.5 ease-in-out;
+    background-color: #50cdff;
+    color: rgb(0, 89, 255);
+    font-size: 15px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+}
+
+#submitButton:hover{
+    background-color: rgb(27, 53, 249);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-color: rgb(2, 5, 95);
+    border-radius: 10px;
+    transform: scale(1);
+    padding: 5px;
+}
